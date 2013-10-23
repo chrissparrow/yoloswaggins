@@ -22,11 +22,11 @@ public class AddressTest {
 
 	@Test
 	public void testToString() {
-		assert(frank.toString().equals("Ross, Toronto, L6k 5g6"));
-		assert(tim.toString().equals("Fifth, Ottawa, H4j 5k6"));
-		assert(joe.toString().equals("Fifth, Ottawa, H4j 5k6"));
-		assert(moh.toString().equals("moh, 5, Fifth, Ottawa, H4j 5k6"));
-		assert(bob.toString().equals("bob, 5, King, Toronto, g5b 7k4"));
+		assert(frank.toString().equals("Ross Toronto L6k 5g6"));
+		assert(tim.toString().equals("Fifth Ottawa H4j 5k6"));
+		assert(joe.toString().equals("Fifth Ottawa H4j 5k6"));
+		assert(moh.toString().equals("5 Fifth Ottawa H4j 5k6"));
+		assert(bob.toString().equals("5 King Toronto g5b 7k4"));
 	}
 
 	@Test
