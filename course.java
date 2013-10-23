@@ -7,20 +7,41 @@ public class Course
     private Professor professor;
     private ArrayList<Student>students;
     
-    public Course( String id, String name) {};
+    public Course( String id, String name) {
+    	this.id = id;
+    	this.name = name;
+    	this.professor = null;
+    	this.students = null;
+    }
     
-    public String getId() { return id; }
-    public String getName( ) { return null; }
+    public String getId() { 
+    	return this.id;
+    }
+    public String getName() {
+    	return this.name;
+    }
 
-    public String toString() { return null; }
+    public String toString() { 
+    	return "ID: " + id + " Name: " + name + " Professor: " + professor.toString() + " Students: " + students.toString(); 
+    }
     public boolean equals(Object o) { return false; }
 
-    public void setProfessor(Professor professor) {};
-    public Professor getProfessor() { return null; }
+    public void setProfessor(Professor professor) {
+    	this.professor = professor;
+    }
+    public Professor getProfessor() { 
+    	return this.professor;
+    }
 
-    public void addStudent( Student student ) {};
-    public void removeStudent( Student student ) {};
-    public Student[] getStudents() { return null; }
+    public void addStudent( Student student ) {
+    	this.students.add(student);
+    }
+    public void removeStudent( Student student ) {
+    	this.students.remove(student);
+    }
+    public Student[] getStudents() { 
+    	return (Student[])this.students.toArray();
+    }
     
     
 }
